@@ -52,6 +52,8 @@ class Cafes(db.Model):
     coffee_price = db.Column(db.String(250))
 
 
+db.create_all()
+
 @app.route("/")
 def home():
     return render_template("index.html")
